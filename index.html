@@ -405,16 +405,18 @@
             isEditMode = !isEditMode;
             const editBtn = document.querySelector('.edit-mode');
             const addForm = document.getElementById('addForm');
-            
-            if (isEditMode) {
-                editBtn.textContent = '✏️ Edit Mode';
-                editBtn.style.background = '#00b894';
-                addForm.style.display = 'block';
-            } else {
-                editBtn.textContent = '🔒 View Only';
-                editBtn.style.background = '#e74c3c';
-                addForm.style.display = 'none';
-            }
+            editBtn.textContent = '🔒 View Only';
+            editBtn.style.background = '#e74c3c';
+            addForm.style.display = 'none';
+            // if (isEditMode) {
+            //     editBtn.textContent = '✏️ Edit Mode';
+            //     editBtn.style.background = '#00b894';
+            //     addForm.style.display = 'block';
+            // } else {
+            //     editBtn.textContent = '🔒 View Only';
+            //     editBtn.style.background = '#e74c3c';
+            //     addForm.style.display = 'none';
+            // }
         }
         
         function addProblem() {
